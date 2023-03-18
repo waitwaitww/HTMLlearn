@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form learning</title>
+</head>
+<body>
+<h1>注册</h1>
+<form action="hreftag.html" method="post">
+    <p>姓名： <input type="text" name="username"></p>
+    <p>密码： <input type="password" name="userpwd"></p>
+    <p>
+        性别：
+        <input type="radio" value="boy" name="sex"/>男
+        <input type="radio" value="girl" name="sex"/>女
+    </p>
+    <p>
+        爱好：
+        <input type="checkbox" value="sleep" name="hobby">睡觉
+        <input type="checkbox" value="play" name="hobby">玩
+        <input type="checkbox" value="study" name="hobby">学习
+    </p>
+    <p>
+        按钮：
+        <input type="button" name="btn" value="button">
+<!--        <input type="image" name="btn2" src="../resources/image/image01.jpg">-->
+    </p>
+
+<!--    下拉框-->
+    <p>国家
+        <select name="listname" >
+            <option value="china" selected>china</option>
+            <option value="USA">USA</option>
+        </select>
+    </p>
+
+<!--    文本域-->
+    <p>备注：<br>
+        <textarea name="textarea"  cols="30" rows="10"></textarea>
+    </p>
+<!--    文件域-->
+    <p>近期照片：<br>
+    <input type="file" name="files">
+    </p>
+
+<!--    邮件验证-->
+    <p>邮箱：
+        <input type="email" name="email">
+    </p>
+<!--    URL验证-->
+    <p>个人博客：
+        <input type="url" name="url">
+    </p>
+<!--    年龄-->
+    <p>年龄：
+        <input type="number" name="age" min="0" max="100" step="1">
+    </p>
+
+<!--    滑块-->
+    <p>
+        <input type="range" min="0" max="100" name="voice" step="2">
+    </p>
+
+<!--    搜索-->
+    <p>搜索：
+        <input type="search" name="search">
+    </p>
+
+<!--    增强鼠标可用性-->
+    <p>
+        <label for="test">test</label>
+        <input type="text" id="test">
+    </p>
+
+    <p>
+        自定义邮箱：
+        <input type="text" name="diyemail" placeholder="请输入邮箱" required pattern="[\\w!#$%&'*+/=?^_`{|}~-]+(?:\\.[\\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\\w](?:[\\w-]*[\\w])?\\.)+[\\w](?:[\\w-]*[\\w])?">
+    </p>
+
+    <button type="submit">提交</button>
+    <button type="reset">重置</button>
+</form>
+</body>
+</html>
